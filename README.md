@@ -44,6 +44,19 @@ To do so, complete the following steps:
 **Part 4: Discuss creating a recommendation system for student loans**
 
 Briefly answer the following questions in the space provided:
-1. Describe the data that you would need to collect to build a recommendation system to recommend student loan options for students. Explain why this data would be relevant and appropriate.
-2. Based on the data you chose to use in this recommendation system, would your model be using collaborative filtering, content-based filtering, or context-based filtering? Justify why the data you 3. selected would be suitable for your choice of filtering method.
-3. Describe two real-world challenges that you would take into consideration while building a recommendation system for student loans. Explain why these challenges would be of concern for a student loan recommendation system.
+
+**1. Describe the data that you would need to collect to build a recommendation system to recommend student loan options for students. Explain why this data would be relevant and appropriate.**
+
+The data collected should come from a reliable source that is representative of the loan applicants, including their race, sex, age, and disability status, among other factors. Under-representation in the data may amplify biases, leading to a recommendation system that is biased towards certain groups. For example, if the training set contains fewer women, the system may recommend loans to more males than females, resulting in unfair treatment. To prevent such biases, I would include all relevant features in the dataset. Additionally, I would consider the cost of tuition and other factors that could assess the applicant's risk tolerance. This would allow the recommendation system to tailor to the applicant's preference for fixed or variable interest rates, desired payback period, and preferred lenders or loan terms.
+
+**2. Based on the data you chose to use in this recommendation system, would your model be using collaborative filtering, content-based filtering, or context-based filtering? Justify why the data you selected would be suitable for your choice of filtering method.**
+
+I suggest using content-based filtering to provide personalized loan recommendations based on the features of the loans and the students' profiles. This involves matching specific features of the students' personal and educational details with corresponding loan features, such as offering lower interest rates to students with high academic performance. By tailoring loan recommendations based on individual user data, we can provide highly relevant and useful suggestions. This approach eliminates the need for historical user interaction data with specific loans, which can be limited, and expands its applicability to a broader group.
+
+**3. Describe two real-world challenges that you would take into consideration while building a recommendation system for student loans. Explain why these challenges would be of concern for a student loan recommendation system.** 
+
+1. Data privacy and security are crucial when dealing with sensitive student financial data. Collecting, storing, and processing this information requires stringent security measures to prevent data breaches and comply with relevant regulations. The risk of data leaks is a significant concern due to the personal and financial nature of the data involved.
+
+2. Bias and fairness are important considerations when developing a recommendation system. I touhed on this in question #1. It is crucial to ensure that the system does not perpetuate or amplify biases, such as favoring students from more affluent backgrounds disproportionately. To ensure fairness and avoid discriminatory practices, it is essential to be transparent and regularly audit and adjust the system.
+
+
